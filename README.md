@@ -12,7 +12,7 @@ Test task where I am supposed to show jokes about/from Chuck Norris
 | MORE!!!! component       |     ❌     |
 | flexbox layout           |     ✅     |
 | Styling                  |     ✅     |
-| redux state              |     ❌     |
+| redux state              |     ✅     |
 | redux saga               |     ❌     |
 | r-x mid-ware localst.    |     ❌     |
 | npm run lint             |     ❌     |

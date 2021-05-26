@@ -1,27 +1,22 @@
-import { useEffect, useState } from "react";
-import { getRandomJoke } from "./api/chuck";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { addRandomJoke } from "./redux/actions/jokeActions";
 import "./App.css";
 
 function App() {
-  const [jokes, setJoke] = useState([]);
-
-  async function addRandomJoke() {
-    const joke = await getRandomJoke();
-    setJoke((jokes) => [...jokes, joke]);
-  }
+  const jokes = useSelector((state) => state.jokes);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    addRandomJoke();
-  }, []);
+    dispatch(addRandomJoke());
+  }, [dispatch]);
 
   return (
     <div className="App">
       <h1 className="Header">Get Ready for Chuck's fanfics!</h1>
       <ul className="Jokes-list">
         <li className="MORE-Jokes">
-          <button onClick={addRandomJoke}>
-            MORE!!!!!
-          </button>
+          <button onClick={(ev) => dispatch(addRandomJoke())}>MORE!!!!!</button>
         </li>
         {jokes.map((joke) => (
           <li className="Joke-item" key={joke}>
