@@ -16,13 +16,17 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Get Ready for Chuck's fanfics!</h1>
-      <ul>
-        <li>
-          <button onClick={addRandomJoke}>MORE!!!!!</button>
+      <h1 className="Header">Get Ready for Chuck's fanfics!</h1>
+      <ul className="Jokes-list">
+        <li className="MORE-Jokes">
+          <button onClick={addRandomJoke}>
+            MORE!!!!!
+          </button>
         </li>
         {jokes.map((joke) => (
-          <li key={joke}>{joke}</li>
+          <li className="Joke-item" key={joke}>
+            {joke}
+          </li>
         ))}
       </ul>
     </div>

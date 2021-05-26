@@ -10,8 +10,8 @@ Test task where I am supposed to show jokes about/from Chuck Norris
 | functionality            |     ✅     |
 | joke-card component      |     ❌     |
 | MORE!!!! component       |     ❌     |
-| flexbox layout           |     ❌     |
-| Styling                  |     ❌     |
+| flexbox layout           |     ✅     |
+| Styling                  |     ✅     |
 | redux state              |     ❌     |
 | redux saga               |     ❌     |
 | r-x mid-ware localst.    |     ❌     |
