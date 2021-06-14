@@ -8,15 +8,16 @@ Test task where I am supposed to show jokes about/from Chuck Norris
 | Create React App         |     ✅     |
 | use api chuck jokes      |     ✅     |
 | functionality            |     ✅     |
-| joke-card component      |     ❌     |
-| MORE!!!! component       |     ❌     |
+| joke-card component      |     🗑     |
+| MORE!!!! component       |     🗑     |
 | flexbox layout           |     ✅     |
 | Styling                  |     ✅     |
-| redux state              |     ❌     |
+| redux state              |     ✅     |
 | redux saga               |     ❌     |
 | r-x mid-ware localst.    |     ❌     |
 | npm run lint             |     ❌     |
 
-✅
-🏗
-❌
+✅ - done
+🏗 - in progress
+❌ - to be done
+🗑 - canceled
